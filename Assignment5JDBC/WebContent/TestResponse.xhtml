@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+<h:head>
+	<title>JSF Response Page 1</title>
+</h:head> 
+<body> 
+	<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="content">
+			<h:form>
+				<h1>Order Information</h1>
+				<p>Hello, #{user.firstName} #{user.lastName}, your current orders are: </p>
+				<h:dataTable value="#{formController.service.orders}" var="i" styleClass="order-table" 
+				headerClasses="order-table-header" rowClasses="order-table-odd, order-table-even">
+					<h:column>
+						<f:facet name="header">Order Number</f:facet>
+						#{i.orderNumber}
+					</h:column>
+					<h:column>
+						<f:facet name="header">Product Name</f:facet>
+						#{i.productName}
+					</h:column>
+					<h:column>
+						<f:facet name="header">Price</f:facet>
+						#{i.price}
+					</h:column>
+					<h:column>
+						<f:facet name="header">Quantity</f:facet>
+						#{i.quantity}
+					</h:column>
+				</h:dataTable>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</body> 
+</html>

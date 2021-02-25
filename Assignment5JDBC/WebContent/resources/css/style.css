@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+.footCenter {
+/* 	text-align: center; */
+/* 	background-color: #333; */
+/* 	color: #fff; */
+/* 	bottom: 0%; */
+/* 	position: absolute; */
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: black;
+	text-align: center;
+}
+/* Table - Response page */
+.order-table{
+	border: 5px black solid;
+	border-collapse: separate; 
+    border-spacing: 10px; 
+}
+
+.order-table-header{
+	font-weight: bold;
+	text-align: center;
+	bgcolor: green;
+	border-bottom:3px black solid;
+}
+
+.order-table-even{
+	background: lightgrey;
+	text-align: center;
+	cellpadding: 15px;
+}
+
+.order-table-odd{
+	background: lightblue;
+	text-align: center;
+	cellpadding: 15px;
+}
+.submitButton{
+	background-color: black; 
+	color: white;
+	padding: 4px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+}
+.submitButton:hover{
+	background-color: grey;
+	color: black;
+}
+.flashButton{
+	background-color: black; 
+	color: white;
+	padding: 4px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+}
+.flashButton:hover{
+	background-color: grey;
+	color: black;
+}
+.businessButton{
+	background-color: black; 
+	color: white;
+	padding: 4px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+}
+.businessButton:hover{
+	background-color: grey;
+	color: black;
+}
+.submitJDBC{
+	background-color: black; 
+	color: white;
+	padding: 4px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+}
+.submitJDBC:hover{
+	background-color: grey;
+	color: black;
+}
